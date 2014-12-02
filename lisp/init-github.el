@@ -5,9 +5,9 @@
 (require-package 'bug-reference-github)
 (add-hook 'prog-mode-hook 'bug-reference-prog-mode)
 
-(when (eval-when-compile (> emacs-major-version 23))
-  (require-package 'github-clone)
-  (require-package 'magit-gh-pulls))
+;;;(when (eval-when-compile (> emacs-major-version 23))
+;;; (require-package 'github-clone)
+;;;  (require-package 'magit-gh-pulls))
 
 
 
