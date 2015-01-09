@@ -46,4 +46,8 @@
       (message "Copied buffer file name '%s' to the clipboard." filename))))
 
 (global-set-key (kbd "M-[") 'paredit-wrap-square)
+(require 'virtualenvwrapper)
+(venv-initialize-interactive-shells)
+(venv-initialize-eshell)
+(setq venv-location "~/env")
 (provide 'init-locales)
