@@ -1,5 +1,5 @@
 (deftheme zenburn
-  "Created 2015-01-04.")
+  "Created 2015-01-28.")
 
 (custom-theme-set-variables
  'zenburn
@@ -13,8 +13,8 @@
  '(cursor ((t (:foreground "#DCDCCC" :background "#FFFFEF"))))
  '(escape-glyph ((t (:foreground "#F0DFAF" :bold t))))
  '(fringe ((t (:foreground "#DCDCCC" :background "#4F4F4F"))))
- '(header-line ((t (:foreground "#F0DFAF" :background "#2B2B2B" :box (:line-width -1 :style released-button)))))
- '(highlight ((t (:background "#383838"))))
+ '(header-line ((t (:box (:line-width -1 :style released-button) :background "#8b0000" :foreground "#F0DFAF"))))
+ '(highlight ((t (:background "dodger blue"))))
  '(success ((t (:foreground "#7F9F7F" :weight bold))))
  '(warning ((t (:foreground "#DFAF8F" :weight bold))))
  '(compilation-column-face ((t (:foreground "#F0DFAF"))))
@@ -44,7 +44,7 @@
  '(mode-line ((((class color) (min-colors 89)) (:foreground "#8FB28F" :background "#2B2B2B" :box (:line-width -1 :style released-button))) (t :inverse-video t)))
  '(mode-line-buffer-id ((t (:foreground "#F0DFAF" :weight bold))))
  '(mode-line-inactive ((t (:foreground "#5F7F5F" :background "#383838" :box (:line-width -1 :style released-button)))))
- '(region ((((class color) (min-colors 89)) (:background "#2B2B2B")) (t :inverse-video t)))
+ '(region ((((class color) (min-colors 89)) (:background "#8b0000")) (t :inverse-video t)))
  '(secondary-selection ((t (:background "#5F5F5F"))))
  '(trailing-whitespace ((t (:background "#CC9393"))))
  '(vertical-border ((t (:foreground "#DCDCCC"))))
