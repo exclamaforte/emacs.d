@@ -16,7 +16,9 @@
 (define-key 'my-prefix (kbd "p") 'bc-previous)
 (define-key 'my-prefix (kbd "n") 'bc-next)
 (define-key 'my-prefix (kbd "g") 'magit-status)
-
+(define-key 'my-prefix (kbd "s") 'helm-spotify)
+(require 'multi)
+(require 'helm-spotify)
 (require 'pinboard)
 (global-linum-mode 1)
 
@@ -34,7 +36,9 @@
 
 (add-to-list 'load-path "/Users/gabriel/.emacs.d/async")
 (require 'helm-config)
-
+(global-set-key (kbd "M-x") 'helm-M-x)
+(helm-mode 1)
+(helm-autoresize-mode 0)
 ;;;if package is not working
 ;;; M-x package-refresh-contents
 (blink-cursor-mode 0)
@@ -68,4 +72,11 @@
 
 (setq blink-cursor-mode nil)
 (provide 'init-local)
+
+(defun mechanics ()
+  (interactive)
+  (run-scheme
+   "/usr/local/scmutils/mit-scheme/bin/scheme --library /usr/local/scmutils/mit-scheme/lib"))
+
+
 ;;; init-local.el ends here
