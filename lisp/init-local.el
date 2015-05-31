@@ -10,14 +10,15 @@
 ;(setenv "NODE_PATH" (concat         "/home/gabe/.emacs.d/tern/lib" ":"         "/home/gabe/.emacs.d" ":"         (getenv "NODE_PATH")         )        )
 ;;; Code:
 (require 'breadcrumb)
-(define-prefix-command 'bread-prefix)
-(global-set-key (kbd "M-j") 'bread-prefix)
-(define-key 'bread-prefix (kbd "b") 'bc-set)
-(define-key 'bread-prefix (kbd "p") 'bc-previous)
-(define-key 'bread-prefix (kbd "n") 'bc-next)
+(define-prefix-command 'my-prefix)
+(global-set-key (kbd "M-j") 'my-prefix)
+(define-key 'my-prefix (kbd "s") 'bc-set)
+(define-key 'my-prefix (kbd "p") 'bc-previous)
+(define-key 'my-prefix (kbd "n") 'bc-next)
+(define-key 'my-prefix (kbd "g") 'magit-status)
 
+(require 'pinboard)
 (global-linum-mode 1)
-(define-key 'bread-prefix (kbd "g") 'magit-status)
 
 ;Change auto save behavior
 (setq auto-save-default nil)
@@ -28,6 +29,11 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
+;; [Facultative] Only if you have installed async.
+(add-to-list 'load-path "/Users/gabriel/.emacs.d/helm")
+
+(add-to-list 'load-path "/Users/gabriel/.emacs.d/async")
+(require 'helm-config)
 
 ;;;if package is not working
 ;;; M-x package-refresh-contents
