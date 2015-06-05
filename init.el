@@ -2,9 +2,11 @@
 ;;; This file bootstraps the configuration, which is divided into
 ;;; a number of other files.
 
-(let ((minver 23))
-  (unless (>= emacs-major-version minver)
+(let ((minver "23.3"))
+  (when (version<= emacs-version "23.1")
     (error "Your Emacs is too old -- this config requires v%s or higher" minver)))
+(when (version<= emacs-version "24")
+  (message "Your Emacs is old, and some functionality in this config will be disabled. Please upgrade if possible."))
 
 (add-to-list 'load-path (expand-file-name "lisp" user-emacs-directory))
 (require 'init-benchmarking) ;; Measure startup time
@@ -18,6 +20,7 @@
 (require 'init-compat)
 (require 'init-utils)
 (require 'init-site-lisp) ;; Must come before elpa, as it may provide package.el
+;; Calls (package-initialize)
 (require 'init-elpa)      ;; Machinery for installing required packages
 (require 'init-exec-path) ;; Set up $PATH
 
@@ -87,15 +90,14 @@
 (require 'init-paredit)
 (require 'init-lisp)
 (require 'init-slime)
-(require 'init-clojure)
 (when (>= emacs-major-version 24)
+  (require 'init-clojure)
   (require 'init-clojure-cider))
 (require 'init-common-lisp)
 
 (when *spell-check-support-enabled*
   (require 'init-spelling))
 
-(require 'init-marmalade)
 (require 'init-misc)
 
 (require 'init-dash)

@@ -2,9 +2,6 @@
 (setq desktop-path (list user-emacs-directory)
       desktop-auto-save-timeout 600)
 (desktop-save-mode 1)
-(defadvice desktop-read (around trace-desktop-errors activate)
-  (let ((debug-on-error t))
-    ad-do-it))
 
 (defadvice desktop-read (around time-restore activate)
     (let ((start-time (current-time)))
@@ -68,7 +65,7 @@
                 tags-table-list)))
 
 (when (eval-when-compile (and (>= emacs-major-version 24)
-                              (string< emacs-version "24.3.50")
+                              (version< emacs-version "24.3.50")
                               ))
   (unless (boundp 'desktop-restore-frames)
     (require-package 'frame-restore)
