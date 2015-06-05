@@ -16,7 +16,8 @@
 (define-key 'my-prefix (kbd "p") 'bc-previous)
 (define-key 'my-prefix (kbd "n") 'bc-next)
 (define-key 'my-prefix (kbd "g") 'magit-status)
-(define-key 'my-prefix (kbd "s") 'helm-spotify)
+(define-key 'my-prefix (kbd "m") 'helm-spotify)
+(define-key 'my-prefix (kbd "r") 'rgrep)
 (require 'multi)
 (require 'helm-spotify)
 (require 'pinboard)
@@ -78,5 +79,6 @@
   (run-scheme
    "/usr/local/scmutils/mit-scheme/bin/scheme --library /usr/local/scmutils/mit-scheme/lib"))
 
-
+(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
+(add-hook 'haskell-mode-hook 'haskell-indentation-mode)
 ;;; init-local.el ends here
