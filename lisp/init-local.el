@@ -20,7 +20,6 @@
 (define-key 'my-prefix (kbd "r") 'rgrep)
 (require 'multi)
 (require 'helm-spotify)
-(require 'pinboard)
 (global-linum-mode 1)
 
 ;Change auto save behavior
@@ -82,3 +81,4 @@
 (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
 (add-hook 'haskell-mode-hook 'haskell-indentation-mode)
 ;;; init-local.el ends here
+(set-face-attribute 'default nil :height 117)
