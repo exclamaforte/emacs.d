@@ -1,0 +1,6 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: ae
+# key: ae
+# binding: direct-keybinding
+# --
+assert_equal ${expected}, ${actual}

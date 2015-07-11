@@ -1,0 +1,8 @@
+# -*- mode: ruby
+# name: it
+# key: it
+# binding: direct-keybinding
+# --
+it $1 do
+  
+end
