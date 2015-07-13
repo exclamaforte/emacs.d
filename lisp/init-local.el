@@ -220,3 +220,4 @@
              (tramp-make-tramp-file-name "sudo" "root" "localhost"
                                          default-directory))))
     (call-interactively 'find-file)))
+(add-hook 'markdown-mode-hook 'turn-on-visual-line-mode)
