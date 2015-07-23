@@ -20,15 +20,17 @@
 (require 'breadcrumb)
 (define-prefix-command 'my-prefix)
 (global-set-key (kbd "M-j") 'my-prefix)
-(define-key 'my-prefix (kbd "s") 'bc-set)
-(define-key 'my-prefix (kbd "p") 'bc-previous)
-(define-key 'my-prefix (kbd "n") 'bc-next)
+(define-key 'my-prefix (kbd "s b") 'bc-set)
+(define-key 'my-prefix (kbd "p b") 'bc-previous)
+(define-key 'my-prefix (kbd "n b") 'bc-next)
 (define-key 'my-prefix (kbd "g") 'magit-status)
 (define-key 'my-prefix (kbd "h") 'helm-spotify)
 (define-key 'my-prefix (kbd "r") 'rgrep)
 (define-key 'my-prefix (kbd "M-o c") 'org-capture)
 (define-key 'my-prefix (kbd "M-o h") 'org-mark-element)
 (define-key 'my-prefix (kbd "f n") 'copy-file-name-to-clipboard)
+(define-key 'my-prefix (kbd "p h") 'highlight-symbol-prev)
+(define-key 'my-prefix (kbd "n h") 'highlight-symbol-next)
 
 (require 'multi)
 (require 'helm-spotify)
@@ -202,9 +204,6 @@
 ;(setq magit-auto-revert-mode nil)
 ;(setq magit-last-seen-setup-instructions "1.4.0")
 
-(set-face-attribute 'rainbow-delimiters-unmatched-face nil
-                    :foreground 'unspecified
-                    :inherit 'error)
 (set-default 'tramp-default-proxies-alist (quote (("45.55.130.219" "root" "/ssh:gabe@45.55.130.219:"))))
 
 (defun find-file-as-root ()
@@ -221,3 +220,6 @@
                                          default-directory))))
     (call-interactively 'find-file)))
 (add-hook 'markdown-mode-hook 'turn-on-visual-line-mode)
+(setq scroll-preserve-screen-position 1)
+(global-set-key (kbd "M-n") (kbd "C-u 1 C-v"))
+(global-set-key (kbd "M-p") (kbd "C-u 1 M-v"))
