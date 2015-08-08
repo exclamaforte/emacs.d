@@ -29,11 +29,30 @@
 (define-key 'my-prefix (kbd "M-o c") 'org-capture)
 (define-key 'my-prefix (kbd "M-o h") 'org-mark-element)
 (define-key 'my-prefix (kbd "f n") 'copy-file-name-to-clipboard)
-(define-key 'my-prefix (kbd "p h") 'highlight-symbol-prev)
-(define-key 'my-prefix (kbd "n h") 'highlight-symbol-next)
+(global-set-key (kbd "M-j C-s") 'isearch-current-symbol)
+(global-set-key (kbd "M-j C-r") 'isearch-backward-current-symbol)
+(global-set-key (kbd "M-j M-f") 'find-name-dired)
+
+(defun move-window-down ()
+  (interactive)
+  (next-line)
+  (recenter))
+(defun move-window-up ()
+  (interactive)
+  (previous-line)
+  (recenter))
+
+                                        ;(setq local-function-key-map (delq '(kp-tab . [9]) local-function-key-map))
+(global-set-key (kbd "C-p") 'move-window-up)
+;(global-set-key (kbd "<up>") 'move-window-up)
+;(global-set-key (kbd "<down>") 'move-window-down)
+(global-set-key (kbd "C-n") 'move-window-down)
+                                        ;(definez-key 'my-prefix (kbd "p h") 'highlight-symbol-prev)
+                                        ;(define-key 'my-prefix (kbd "n h") 'highlight-symbol-next)
+
 
 (require 'multi)
-(require 'helm-spotify)
+;(require 'helm-spotify)
 
 
 
@@ -179,8 +198,31 @@
   (let ((start (point)))
     (isearch-backward-regexp nil 1)
     (isearch-yank-symbol partialp)))
-(global-set-key (kbd "M-j C-s") 'isearch-current-symbol)
-(global-set-key (kbd "M-j C-r") 'isearch-backward-current-symbol)
+
+(defvar blog-prefix "/Users/gabriel/Projects/blog/resources/templates/md/")
+(defun create-blog-post (post-name date)
+  "Create a blog post"
+  (interactive "bPost Name: \nbPost date (YYYY-MM-DD): ")
+  (find-file (string-join '(blog-prefix
+                            "preliminary/"
+                            date
+                            "-"
+                            (string-join (split-string post-name) "-")
+                            ".md"))))
+(defun finish-blog-post (post-name)
+  "Move a blog post to the correct directory"
+  (interactive "bPost Name: ")
+  (rename-file ('(blog-prefix
+                  "preliminary/"
+                  date
+                  "-"
+                  (string-join (split-string post-name) "-")
+                  ".md"))
+               (string-join '("/Users/gabriel/Projects/blog/resources/templates/md/posts/"
+                              date
+                              "-"
+                              (string-join (split-string post-name) "-")
+                              ".md"))))
 
 (require 'yasnippet)
 (yas-global-mode 1)
@@ -221,5 +263,11 @@
     (call-interactively 'find-file)))
 (add-hook 'markdown-mode-hook 'turn-on-visual-line-mode)
 (setq scroll-preserve-screen-position 1)
-(global-set-key (kbd "M-n") (kbd "C-u 1 C-v"))
-(global-set-key (kbd "M-p") (kbd "C-u 1 M-v"))
+;(global-set-key (kbd "M-n") (kbd "C-u 1 C-v"))
+;(global-set-key (kbd "M-p") (kbd "C-u 1 M-v"))
+
+(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
+(define-key helm-map (kbd "C-i") 'helm-execute-persistent-action)
+(define-key helm-map (kbd "C-z")  'helm-select-action)
+
+;(global-set-key (kbd "C-i") 'move-window-down)
