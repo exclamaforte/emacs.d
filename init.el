@@ -53,7 +53,7 @@
 (require 'init-flycheck)
 
 (require 'init-recentf)
-(require 'init-ido)
+;(require 'init-ido)
 (require 'init-hippie-expand)
 (require 'init-auto-complete)
 (require 'init-windows)

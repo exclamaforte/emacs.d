@@ -1,0 +1,1 @@
+("~/.emacs.d/" "~/Projects/blog/" "~/Projects/theoldreader/" "~/Projects/bevolution/" "/usr/local/")

@@ -1,0 +1,200 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/Users/gabriel/Projects/theoldreader/spec/" . "features/")
+ ("/Users/gabriel/.rvm/gems/" . "ruby-2.1.6@reader/")
+ ("/Users/gabriel/.rvm/rubies/" . "default/")
+ ("/Users/gabriel/.rvm/" . "gems/")
+ ("/Users/gabriel/Projects/theoldreader/config/" . "initializers/")
+ ("/Users/gabriel/Projects/SICM/" . "ch1/")
+ ("/Users/gabriel/Downloads/" . "gist5043465-d72bb8ad23ed33e6aa509deff27d3dd975a9861e/")
+ ("/Users/gabriel/Projects/theoldreader/app/models/" . "user/")
+ ("/Users/gabriel/Projects/theoldreader/app/views/" . "profile/")
+ ("/Users/gabriel/.emacs.d/" . "lisp/")
+ ("/Users/" . "gabriel/")
+ ("/" . "Users/")
+ ("/Users/gabriel/Projects/theoldreader/app/assets/javascripts/" . "reader/")
+ ("/Users/gabriel/Projects/theoldreader/app/assets/" . "stylesheets/")
+ ("/Users/gabriel/Projects/theoldreader/app/" . "views/")
+ ("/Users/gabriel/Projects/theoldreader/" . "app/")
+ ("/Users/gabriel/Projects/" . "theoldreader/")
+ ("/Users/gabriel/" . "Projects/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/Users/gabriel/Projects/theoldreader/app/views/profile/"
+ "/Users/gabriel/Projects/theoldreader/"
+ "/Users/gabriel/.emacs.d/lisp/"
+ "/Users/gabriel/.emacs.d/"
+ "/Users/gabriel/Projects/theoldreader/spec/features/"
+ "/Users/gabriel/Projects/theoldreader/app/models/"
+ "/Users/gabriel/Projects/theoldreader/log/"
+ "/Users/gabriel/.rvm/rubies/"
+ "/Users/gabriel/"
+ "/Users/gabriel/Projects/theoldreader/config/"
+ "/Users/gabriel/Projects/theoldreader/config/initializers/"
+ "/Users/gabriel/Projects/theoldreader/app/helpers/"
+ "/Users/gabriel/Projects/theoldreader/app/controllers/"
+ "/Users/gabriel/Projects/theoldreader/app/views/posts/"
+ "/Users/gabriel/Projects/HSOM/"
+ "/Users/gabriel/Projects/"
+ "/Users/gabriel/Projects/theoldreader/app/assets/stylesheets/"
+ "/Users/gabriel/Projects/theoldreader/app/views/feeds/"
+ "/tmp/tt/"
+ "/tmp/hs/"
+ "/Users/gabriel/Projects/SICP/Gabe/"
+ "/Users/gabriel/bin/guile-2.0.11/"
+ "/Users/gabriel/Projects/SICM/ch1/"
+ "/usr/local/scmutils/mit-scheme/bin/"
+ "/usr/local/bin/"
+ "/Users/gabriel/Downloads/gist5043465-d72bb8ad23ed33e6aa509deff27d3dd975a9861e/"
+ "/Users/gabriel/Projects/theoldreader/app/assets/javascripts/reader/"
+ "/usr/local/etc/"
+ "/Users/gabriel/Projects/theoldreader/app/assets/javascripts/plugins/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "show.html.erb"
+ ".DS_Store"
+ "init-local.el"
+ "init.el"
+ "custom.el"
+ "init-compat.el"
+ "init-common-lisp.el"
+ "init-clojure.el"
+ "helm-spotify.el"
+ "init-clojure-cider.el"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/Users/gabriel/Projects/theoldreader/app/views/profile/" (21890 15325 0 0) "show.rss.builder" "show.html.erb" "search.html.erb" "friends.html.erb" "_top.html.erb" "_remove.html.erb" "_list.html.erb" "_follow.html.erb" "_approve.html.erb" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/app/views/accounts/" (21850 6101 0 0) "receipt.html.erb" "new.html.erb" "edit.html.erb" "_plans.html.erb" "_notification.html.erb" "_cc_form.html.erb" "../" "./")
+
+ ("/Users/gabriel/.emacs.d/" (21891 17331 0 0) "zenburn-theme.el" "var/" "url/" "tramp" "test-startup.sh" "tern/" "swank-js/" "snippets/" "site-lisp/" "session.10b5c34d05d347142e142116413821394100000023720031" "session.107718fbe6980758f1141666337987620100000020590032" "recentf~" "recentf" "README.md" "projectile-bookmarks.eld" "org-clock-save.el" "npm-debug.log" "new_function_ideas.txt" "lisp/" "LICENSE" "init.el" "ido.last~" "ido.last" "history" "helm/" "eshell/" "elpa/" "ditaa0_9.jar" "custom.el" "auto-save-list/" "async/" "ac-comphist.dat" ".travis.yml" ".smex-items" ".session" ".gitmodules" ".gitignore" ".git/" ".emacs.desktop" ".agignore" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/:~/" (21880 46433 0 0) ".rvm/" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/" (21891 15366 0 0) "Vagrantfile" "tmp/" "TAGS" "spec/" "script/" "README.md" "Rakefile" "public/" "log/" "lib/" "Gemfile.lock" "Gemfile" "debugging.txt" "db/" "config.ru" "config/" "Capfile" "app/" ":~/" ".rvm" ".ruby-version" ".powrc" ".gitignore" ".git/" ".DS_Store" ".coco.yml" "../" "./")
+
+ ("/Users/gabriel/Projects/" (21886 60959 0 0) "theoldreader/" "SICP/" "SICM/" "i18n/" "HSOM/" ".DS_Store" "../" "./")
+
+ ("/Users/gabriel/.emacs.d/lisp/" (21891 16009 0 0) "pinboard.el" "multi.el" "init-xterm.el" "init-windows.el" "init-vc.el" "init-utils.el" "init-uniquify.el" "init-themes.el" "init-textile.el" "init-sql.el" "init-spelling.el" "init-slime.el" "init-site-lisp.el" "init-sessions.el" "init-ruby-mode.el" "init-recentf.el" "init-rails.el" "init-python-mode.el" "init-proxies.el" "init-php.el" "init-paredit.el" "init-osx-keys.el" "init-org.el" "init-nxml.el" "init-mmm.el" "init-misc.el" "init-markdown.el" "init-locales.el" "init-local.el" "init-lisp.el" "init-ledger.el" "init-javascript.el" "init-isearch.el" "init-ido.el" "init-ibuffer.el" "init-html.el" "init-hippie-expand.el" "init-haskell.el" "init-haml.el" "init-gui-frames.el" "init-grep.el" "init-github.el" "init-git.el" "init-frame-hooks.el" "init-fonts.el" "init-flyspell.el" "init-flycheck.el" "init-exec-path.el" "init-erlang.el" "init-elpa.el" "init-editing-utils.el" "init-dired.el" "init-dash.el" "init-darcs.el" "init-csv.el" "init-css.el" "init-crontab.el" "init-compile.el" "init-compat.el" "init-common-lisp.el" "init-clojure.el" "init-clojure-cider.el" "init-benchmarking.el" "init-auto-complete.el" "helm-spotify.el" "breadcrumb.el" ".emacs.desktop" ".dir-locals.el" ".#temp.js" "../" "./")
+
+ ("/Users/gabriel/" (21891 17210 0 0) "Public/" "Projects/" "Pictures/" "Organization/" "nw_usr" "nw_rel.rb" "Music/" "Movies/" "Library/" "Downloads/" "Documents/" "Desktop/" "bin/" "Applications/" ".zshrc" ".zlogin" ".viminfo" ".Trash/" ".subversion/" ".ssh/" ".spcmks/" ".spacemacs" ".rvm/" ".pry_history" ".profile" ".powconfig" ".pow/" ".mongorc.js" ".mkshrc" ".lesshst" ".irb-history" ".hgignore_global" ".gitignore_global" ".gitconfig" ".git-prompt.sh" ".ghc/" ".gemrc" ".gem/" ".geiser_history.guile" ".emacs.d/" ".emacs.backups/" ".DS_Store" ".dbshell" ".CFUserTextEncoding" ".cache/" ".cabal/" ".breadcrumb" ".bashrc" ".bash_profile" ".bash_history" ".atom/" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/app/models/" (21879 27915 0 0) "user.rb" "user/" "sudo.txt" "sudo.py" "subscription.rb" "sponsorship_request.rb" "sponsored_post.rb" "sendto.rb" "relationship.rb" "post.rb" "post/" "permanent_item.rb" "item.rb" "folder.rb" "feed.rb" "feed/" "coupon.rb" "comment.rb" "base_item.rb" "authorization.rb" "archived_account.rb" "account.rb" "account/" ".#user.rb" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/config/" (21879 16803 0 0) "tire.rb" "solano.yml" "solano.sh" "sidekiq.yml" "routes.rb" "redis.conf" "puma/" "progress-bar.rb" "plans.yml" "mongoid.yml" "mailer.yml" "locales/" "initializers/" "i18n-js.yml" "environments/" "environment.rb" "dev-chef/" "deploy.rb" "deploy/" "boot.rb" "application.rb" "../" "./")
+
+ ("/Users/gabriel/.emacs.d/elpa/" (21879 24854 0 0) "yari-20140206.611/" "yaml-mode-20141125.37/" "yagist-20150425.551/" "whole-line-or-region-20110901.130/" "whitespace-cleanup-mode-20150603.447/" "wgrep-20141016.1656/" "web-20141231.1201/" "wanderlust-20150526.1032/" "vc-darcs-20141122.1326/" "unfill-20131103.213/" "undo-tree-20140509.522/" "tidy-20111222.1756/" "textile-mode-20120721.1258/" "tagedit-20141021.2139/" "switch-window-20150114.215/" "sql-indent-20150424.1716/" "smex-20141210.1422/" "smarty-mode-20100703.458/" "slime-20150601.1411/" "skewer-mode-20150422.1818/" "skewer-less-20131015.622/" "simple-httpd-20150430.1755/" "session-20120510.1700/" "semi-20150525.419/" "scss-mode-20150107.1400/" "scratch-20120830.1028/" "sass-mode-20150508.2012/" "s-20140910.334/" "ruby-hash-syntax-20141010.839/" "ruby-compilation-20150608.2202/" "robe-20150430.1724/" "rinari-20150608.1559/" "regex-tool-20131104.1434/" "redshank-20120510.1230/" "rake-20150124.728/" "rainbow-mode-0.11/" "rainbow-delimiters-20150320.17/" "queue-0.1.1/" "projectile-rails-20150422.829/" "projectile-20150606.138/" "project-local-variables-20080502.1652/" "popwin-20150315.600/" "popup-20150315.612/" "pkg-info-20150517.443/" "pip-requirements-20150423.1358/" "php-mode-20150602.2318/" "pcache-20150125.1653/" "paredit-everywhere-20140906.210/" "paredit-20150217.713/" "page-break-lines-20150226.817/" "packed-20150122.2048/" "osx-location-20150522.855/" "org-pomodoro-20150602.635/" "org-mac-link-20141015.608/" "org-mac-iCal-20140107.519/" "org-fstree-20090723.819/" "noflet-20141102.654/" "names-20150125.552/" "mwe-log-commands-20100703.541/" "multiple-cursors-20150528.2303/" "multi-20131013.844/" "move-dup-20140925.808/" "mmm-mode-20150325.15/" "marmalade-20110602.1622/" "markdown-mode-20150606.2129/" "magit-svn-20150319.1355/" "magit-gh-pulls-20150328.2353/" "magit-20150608.1139/" "macrostep-20150416.1831/" "lua-mode-20150518.942/" "logito-20120225.1255/" "log4e-20150105.505/" "lively-20120728.1413/" "let-alist-1.0.3/" "less-css-mode-20150511.319/" "ledger-mode-20150604.722/" "kv-20140108.734/" "jump-20130702.33/" "json-snatcher-20150511.2047/" "json-reformat-20150406.1705/" "json-mode-20150413.1948/" "js2-mode-20150524.426/" "js-comint-20080530.757/" "ipretty-20140406.2220/" "inflections-20121016.157/" "inf-ruby-20150602.1153/" "idomenu-20141123.1320/" "ido-ubiquitous-20150528.2322/" "ido-completing-read+-20150528.2322/" "ibuffer-vc-20150401.204/" "htmlize-20130207.1202/" "hl-sexp-20101130.443/" "hippie-expand-slime-20130907.132/" "highlight-symbol-20150430.1552/" "highlight-quoted-20140916.1122/" "highlight-escape-sequences-20130531.1512/" "hi2-20141005.1231/" "hayoo-20140831.521/" "haskell-mode-readme.txt" "haskell-mode-20150607.1202/" "haml-mode-20150508.2011/" "hackernews-20150216.218/" "guide-key-20150107.2235/" "gnuplot-20141231.1337/" "gntp-20141024.1950/" "gitignore-mode-20150405.1627/" "github-clone-20141006.210/" "github-browse-file-20150525.633/" "gitconfig-mode-20150405.1627/" "git-timemachine-20150513.1457/" "git-rebase-mode-20150122.1114/" "git-messenger-20150314.602/" "git-commit-mode-20150330.1048/" "git-blame-20110509.926/" "ghci-completion-20140316.2331/" "gh-20150126.1125/" "geiser-20150517.1714/" "furl-20110112.1707/" "fullframe-20140619.305/" "flycheck-package-20150527.612/" "flycheck-ledger-20140605.1146/" "flycheck-hdevtools-20150329.323/" "flycheck-haskell-20150602.28/" "flycheck-clojure-20150116.234/" "flycheck-20150609.1252/" "flim-20150522.1642/" "findr-20130824.1207/" "fill-column-indicator-20140509.1101/" "f-20150605.927/" "expand-region-20150525.205/" "exec-path-from-shell-20141212.846/" "erlang-20150319.456/" "epl-20150517.433/" "elisp-slime-nav-20141224.854/" "elein-20120120.316/" "eldoc-eval-20150512.506/" "dsvn-20130120.1257/" "dired-sort-20090209.438/" "dired+-20150607.145/" "diminish-20091203.1012/" "diff-hl-20150606.643/" "default-text-scale-20150227.956/" "dash-20150513.1027/" "darcsum-20140315.2110/" "csv-nav-20130407.1820/" "csv-mode-1.4/" "css-eldoc-20150124.1923/" "crontab-mode-20090510.1355/" "creole-mode-20130721.1750/" "creole-20140924.800/" "color-theme-sanityinc-tomorrow-20150328.1259/" "color-theme-sanityinc-solarized-20150328.1301/" "coffee-mode-20150602.2205/" "clojure-mode-20150517.6/" "cljsbuild-mode-20140619.126/" "cl-lib-highlight-20140127.1312/" "cider-20150608.1018/" "bug-reference-github-20131202.1303/" "browse-kill-ring-20150606.1040/" "auto-complete-20150408.1132/" "auto-compile-20150511.1017/" "archives/" "apel-20141024.1642/" "anzu-20150517.2142/" "alert-20150402.1246/" "aggressive-indent-20150516.238/" "ace-jump-mode-20140616.115/" "ac-slime-20141002.639/" "ac-js2-20140906.442/" "ac-inf-ruby-20131115.350/" "ac-haskell-process-20150423.702/" "ac-cider-20150306.254/" "../" "./")
+
+ ("/Users/gabriel/.emacs.d/elpa/projectile-rails-20150422.829/" (21879 26662 0 0) "projectile-rails.elc" "projectile-rails.el" "projectile-rails-pkg.elc" "projectile-rails-pkg.el" "projectile-rails-autoloads.el" "../" "./")
+
+ ("/usr/local/Cellar/emacs/24.5/share/emacs/24.5/lisp/emacs-lisp/" (21850 3320 0 0) "warnings.elc" "warnings.el.gz" "unsafep.elc" "unsafep.el.gz" "trace.elc" "trace.el.gz" "tq.elc" "tq.el.gz" "timer.elc" "timer.el.gz" "testcover.elc" "testcover.el.gz" "tcover-unsafep.elc" "tcover-unsafep.el.gz" "tcover-ses.elc" "tcover-ses.el.gz" "tabulated-list.elc" "tabulated-list.el.gz" "syntax.elc" "syntax.el.gz" "subr-x.elc" "subr-x.el.gz" "smie.elc" "smie.el.gz" "shadow.elc" "shadow.el.gz" "rx.elc" "rx.el.gz" "ring.elc" "ring.el.gz" "regi.elc" "regi.el.gz" "regexp-opt.elc" "regexp-opt.el.gz" "re-builder.elc" "re-builder.el.gz" "pp.elc" "pp.el.gz" "pcase.elc" "pcase.el.gz" "package.elc" "package.el.gz" "package-x.elc" "package-x.el.gz" "nadvice.elc" "nadvice.el.gz" "map-ynp.elc" "map-ynp.el.gz" "macroexp.elc" "macroexp.el.gz" "lisp.elc" "lisp.el.gz" "lisp-mode.elc" "lisp-mode.el.gz" "lisp-mnt.elc" "lisp-mnt.el.gz" "helper.elc" "helper.el.gz" "gv.elc" "gv.el.gz" "gulp.elc" "gulp.el.gz" "generic.elc" "generic.el.gz" "float-sup.elc" "float-sup.el.gz" "find-func.elc" "find-func.el.gz" "ewoc.elc" "ewoc.el.gz" "ert.elc" "ert.el.gz" "ert-x.elc" "ert-x.el.gz" "elp.elc" "elp.el.gz" "elint.elc" "elint.el.gz" "eldoc.elc" "eldoc.el.gz" "eieio.elc" "eieio.el.gz" "eieio-speedbar.elc" "eieio-speedbar.el.gz" "eieio-opt.elc" "eieio-opt.el.gz" "eieio-datadebug.elc" "eieio-datadebug.el.gz" "eieio-custom.elc" "eieio-custom.el.gz" "eieio-core.elc" "eieio-core.el.gz" "eieio-base.elc" "eieio-base.el.gz" "edebug.elc" "edebug.el.gz" "easymenu.elc" "easymenu.el.gz" "easy-mmode.elc" "easy-mmode.el.gz" "disass.elc" "disass.el.gz" "derived.elc" "derived.el.gz" "debug.elc" "debug.el.gz" "crm.elc" "crm.el.gz" "copyright.elc" "copyright.el.gz" "cl.elc" "cl.el.gz" "cl-seq.elc" "cl-seq.el.gz" "cl-macs.elc" "cl-macs.el.gz" "cl-loaddefs.el" "cl-lib.elc" "cl-lib.el.gz" "cl-indent.elc" "cl-indent.el.gz" "cl-extra.elc" "cl-extra.el.gz" "checkdoc.elc" "checkdoc.el.gz" "check-declare.elc" "check-declare.el.gz" "chart.elc" "chart.el.gz" "cconv.elc" "cconv.el.gz" "bytecomp.elc" "bytecomp.el.gz" "byte-run.elc" "byte-run.el.gz" "byte-opt.elc" "byte-opt.el.gz" "bindat.elc" "bindat.el.gz" "benchmark.elc" "benchmark.el.gz" "backquote.elc" "backquote.el.gz" "avl-tree.elc" "avl-tree.el.gz" "autoload.elc" "autoload.el.gz" "authors.elc" "authors.el.gz" "advice.elc" "advice.el.gz" "../" "./")
+
+ ("/Users/gabriel/Projects/HSOM/" (21873 18920 0 0) "test.hs" "Setup.hs" "main.hs" "HSOM.cabal" "dist/" "../" "./")
+
+ ("/Users/gabriel/.emacs.d/elpa/haskell-mode-20150512.2319/" (21873 18237 0 0) "w3m-haddock.elc" "w3m-haddock.el" "NEWS" "logo.svg" "inf-haskell.elc" "inf-haskell.el" "highlight-uses-mode.elc" "highlight-uses-mode.el" "haskell.elc" "haskell.el" "haskell-utils.elc" "haskell-utils.el" "haskell-unicode-input-method.elc" "haskell-unicode-input-method.el" "haskell-string.elc" "haskell-string.el" "haskell-sort-imports.elc" "haskell-sort-imports.el" "haskell-simple-indent.elc" "haskell-simple-indent.el" "haskell-session.elc" "haskell-session.el" "haskell-sandbox.elc" "haskell-sandbox.el" "haskell-repl.elc" "haskell-repl.el" "haskell-process.elc" "haskell-process.el" "haskell-presentation-mode.elc" "haskell-presentation-mode.el" "haskell-package.elc" "haskell-package.el" "haskell-navigate-imports.elc" "haskell-navigate-imports.el" "haskell-move-nested.elc" "haskell-move-nested.el" "haskell-modules.elc" "haskell-modules.el" "haskell-mode.info" "haskell-mode.elc" "haskell-mode.el" "haskell-mode-pkg.el" "haskell-mode-autoloads.el" "haskell-menu.elc" "haskell-menu.el" "haskell-load.elc" "haskell-load.el" "haskell-interactive-mode.elc" "haskell-interactive-mode.el" "haskell-indentation.elc" "haskell-indentation.el" "haskell-indent.elc" "haskell-indent.el" "haskell-font-lock.elc" "haskell-font-lock.el" "haskell-doc.elc" "haskell-doc.el" "haskell-decl-scan.elc" "haskell-decl-scan.el" "haskell-debug.elc" "haskell-debug.el" "haskell-customize.elc" "haskell-customize.el" "haskell-complete-module.elc" "haskell-complete-module.el" "haskell-compile.elc" "haskell-compile.el" "haskell-compat.elc" "haskell-compat.el" "haskell-commands.elc" "haskell-commands.el" "haskell-collapse.elc" "haskell-collapse.el" "haskell-checkers.elc" "haskell-checkers.el" "haskell-cabal.elc" "haskell-cabal.el" "haskell-bot.elc" "haskell-bot.el" "haskell-align-imports.elc" "haskell-align-imports.el" "ghci-script-mode.elc" "ghci-script-mode.el" "ghc-core.elc" "ghc-core.el" "dir" "../" "./")
+
+ ("/Users/gabriel/.cabal/" (21873 14530 0 0) "where-is-my-stuff.txt" "setup-exe-cache/" "logs/" "config.platform" "config" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/app/controllers/" (21872 52838 0 0) "subscriptions_controller.rb" "sponsorships_controller.rb" "sponsored_posts_controller.rb" "sessions_controller.rb" "registrations_controller.rb" "profile_controller.rb" "posts_controller.rb" "paypal_controller.rb" "passwords_controller.rb" "pages_controller.rb" "omniauth_controller.rb" "import_controller.rb" "folders_controller.rb" "fixtures_controller.rb" "feeds_controller.rb" "confirmations_controller.rb" "comments_controller.rb" "bookmarks_controller.rb" "base_controller.rb" "application_controller.rb" "api/" "accounts_controller.rb" "#profile_controller.rb#" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/app/assets/stylesheets/" (21872 51416 0 0) "nano.css" "elements.less" "bootstrap.css.less" "bootstrap-social.css" "application.css.less" "../" "./")
+
+ ("/Users/gabriel/Documents/" (21871 1616 0 0) "SyntaxError at _profile_c14c5af2969004e26e65aa8c_following.html" ".localized" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/config/locales/" (21872 46110 0 0) "zh-TW.yml" "zh-HK.yml" "zh-CN.yml" "uk.yml" "tr.yml" "sv.yml" "sk.yml" "ru.yml" "ru-old.yml" "pt.yml" "pl.yml" "nl.yml" "nb.yml" "it.yml" "hu.yml" "fr.yml" "fa.yml" "es.yml" "en.yml" "el.yml" "de.yml" "cs.yml" "ca.yml" ".#en.yml" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/app/assets/javascripts/reader/" (21872 31883 0 0) "users.js.coffee" "subscriptions.js.coffee" "sortable.js.coffee" "sign.js.coffee" "sidebar.js.coffee" "shortcuts.js.coffee" "replacements.js.coffee" "models.js.coffee" "items.js.coffee" "index.js" "debug.js.coffee" "contents.js.coffee" "accounts.js.coffee" "../" "./")
+
+ ("/Users/gabriel/Projects/SICP/Gabe/" (21866 50864 0 0) "2-2.scm" "2-1.scm" "1-3.scm" "1-2.scm" "1-1.scm" ".gitignore" "../" "./")
+
+ ("/tmp/hs/" (21872 23127 0 0) ".git/" "../" "./")
+
+ ("/tmp/tt/" (21872 23127 0 0) "tests/" ".git/" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/config/initializers/" (21872 36290 0 0) "wrap_parameters.rb" "timeout.rb" "stripe.rb" "statsd.rb" "sidekiq.rb" "session_store.rb" "secret_token.rb" "sanitize.rb" "route.rb" "recaptcha.rb" "readlater.rb" "rails.rb" "rack.rb" "paypal.rb" "mongoid.rb" "mime_types.rb" "memcached.rb" "loggers.rb" "inflections.rb" "feedjira.rb" "devise.rb" "core_ext.rb" "bugsnag.rb" "backtrace_silencers.rb" "aws.rb" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/app/views/feeds/" (21872 37821 0 0) "view.html.erb" "subscribe.html.erb" "similar.html.erb" "show.html.erb" "index.html.erb" "_list.html.erb" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/log/" (21872 36197 0 0) "youtubeupgrade.log" "test.log" "redis_stdout.log" "puma_test_stdout.log" "puma_test_stderr.log" "populates.log" "normalizations.log" "jobs.log" "inconsistencies.log" "imports.log" "GL.log" "experiments.log" "development.log" "destroys.log" "cleanups.log" "accounts.log" ".gitkeep" "../" "./")
+
+ ("/tmp/" (21866 49197 0 0) "tt/" "temp/" "nonces/" "nack.3110.9557905527.sock" "mongodb-27017.sock" "KSOutOfProcessFetcher.501.qQkpPp2uZLdVc5pukHmfJMR4bkM=/" "hs/" "com.apple.launchd.oXkT98j5Bw/" "com.apple.launchd.IGviKZQGKu/" "com.apple.launchd.foXoQ8NWam/" "com.apple.launchd.aqmgxiFJhR/" "associations/" "../" "./")
+
+ ("/usr/local/bin/" (21866 39459 0 0) "xzmore" "xzless" "xzgrep" "xzfgrep" "xzegrep" "xzdiff" "xzdec" "xzcmp" "xzcat" "xz" "xmlpatternsvalidator" "xmlpatterns" "wget" "unxz" "unlzma" "uic" "ruby-build" "redis-server" "redis-sentinel" "redis-cli" "redis-check-dump" "redis-check-aof" "redis-benchmark" "rcc" "rbenv-uninstall" "rbenv-install" "qt3to4" "qmlplugindump" "qmake" "qhelpgenerator" "qdoc3" "qcollectiongenerator" "plugin" "pkg-config" "npm" "node" "mongotop" "mongostat" "mongosniff" "mongos" "mongorestore" "mongoperf" "mongooplog" "mongoimport" "mongofiles" "mongoexport" "mongodump" "mongod" "mongo" "moc" "memcached" "mechanics" "macdeployqt" "lzmore" "lzmainfo" "lzmadec" "lzma" "lzless" "lzgrep" "lzfgrep" "lzegrep" "lzdiff" "lzcmp" "lzcat" "lupdate" "lrelease" "lconvert" "ksba-config" "ifnames" "guile-tools" "guile-snarf" "guile-config" "guile" "guild" "grep-changelog" "gpg-error-config" "gpg-error" "glibtoolize" "glibtool" "gitk" "git-upload-pack" "git-upload-archive" "git-subtree" "git-shell" "git-receive-pack" "git-flow" "git-cvsserver" "git-credential-osxkeychain" "git" "event_rpcgen.py" "etags" "emacsclient" "emacs-24.5" "emacs" "elasticsearch.in.sh" "elasticsearch" "ebrowse" "bsondump" "brew" "autoupdate" "autoscan" "autoreconf" "automake-1.15" "automake" "autom4te" "autoheader" "autoconf" "atom" "apm" "aclocal-1.15" "aclocal" "../" "./")
+
+ ("/Users/gabriel/bin/guile-2.0.11/" (21866 39163 0 0) "THANKS" "test-suite/" "README" "NEWS" "module/" "meta/" "Makefile.in" "Makefile.am" "maint.mk" "m4/" "LICENSE" "libguile.h" "libguile/" "lib/" "INSTALL" "HACKING" "GUILE-VERSION" "guile-readline/" "GNUmakefile" "gnulib-local/" "gdbinit" "gc-benchmarks/" "examples/" "emacs/" "doc/" "COPYING.LESSER" "COPYING" "configure.ac" "configure" "config.rpath" "config.log" "config.h.in" "check-guile.in" "ChangeLog-2008" "ChangeLog" "build-aux/" "benchmark-suite/" "benchmark-guile.in" "AUTHORS" "am/" "aclocal.m4" "acinclude.m4" "ABOUT-NLS" ".version" ".tarball-version" "../" "./")
+
+ ("/Users/gabriel/Projects/SICP/" (21866 37923 0 0) "Will/" "Tommy/" "Sam/" "Sage/" "README.md" "Mark/" "Gabe/" "Danny_Lerner/" "Dan/" "Ben/" ".git/" "../" "./")
+
+ ("/Users/gabriel/Projects/SICM/ch1/" (21866 37887 0 0) "1-1.scm" "../" "./")
+
+ ("/usr/local/scmutils/" (19468 33750 0 0) "src/" "mit-scheme/" "manual/" "../" "./")
+
+ ("/usr/local/scmutils/mit-scheme/" (19468 33746 0 0) "lib/" "bin/" "../" "./")
+
+ ("/usr/local/" (21866 34532 0 0) "var/" "SUPPORTERS.md" "share/" "scmutils/" "README.md" "opt/" "LICENSE.txt" "Library/" "lib/" "include/" "Frameworks/" "etc/" "CONTRIBUTING.md" "CODEOFCONDUCT.md" "Cellar/" "bin/" ".yardopts" ".gitignore" ".git/" "../" "./")
+
+ ("/usr/local/scmutils/mit-scheme/bin/" (19468 33746 0 0) "scheme" "mit-scheme-x86-64" "mit-scheme-native" "mit-scheme" "bchscheme" "../" "./")
+
+ ("/Users/gabriel/Projects/SICM/" (21866 33813 0 0) "README.md" "ch1/" ".git/" "../" "./")
+
+ ("/Users/gabriel/.emacs.d/elpa/geiser-20150517.1714/" (21866 34732 0 0) "web.info" "top.info" "scheme/" "macros.info" "geiser.info" "geiser.elc" "geiser.el" "geiser-xref.elc" "geiser-xref.el" "geiser-version.elc" "geiser-version.el" "geiser-table.elc" "geiser-table.el" "geiser-syntax.elc" "geiser-syntax.el" "geiser-repl.elc" "geiser-repl.el" "geiser-reload.elc" "geiser-reload.el" "geiser-racket.elc" "geiser-racket.el" "geiser-popup.elc" "geiser-popup.el" "geiser-pkg.el" "geiser-mode.elc" "geiser-mode.el" "geiser-menu.elc" "geiser-menu.el" "geiser-log.elc" "geiser-log.el" "geiser-impl.elc" "geiser-impl.el" "geiser-image.elc" "geiser-image.el" "geiser-guile.elc" "geiser-guile.el" "geiser-eval.elc" "geiser-eval.el" "geiser-edit.elc" "geiser-edit.el" "geiser-doc.elc" "geiser-doc.el" "geiser-debug.elc" "geiser-debug.el" "geiser-custom.elc" "geiser-custom.el" "geiser-connection.elc" "geiser-connection.el" "geiser-completion.elc" "geiser-completion.el" "geiser-compile.elc" "geiser-compile.el" "geiser-company.elc" "geiser-company.el" "geiser-chicken.elc" "geiser-chicken.el" "geiser-base.elc" "geiser-base.el" "geiser-autoloads.el" "geiser-autodoc.elc" "geiser-autodoc.el" "dir" "bin/" "../" "./")
+
+ ("/Users/gabriel/Downloads/gist5043465-d72bb8ad23ed33e6aa509deff27d3dd975a9861e/" (21866 11154 0 0) "pinboard.el" "../" "./")
+
+ ("/Users/gabriel/Downloads/" (21866 11130 0 0) "TotalSpaces2-2.2.20.dmg" "subscriptions (1).opml" "SourceTree_2.0.5.2.dmg" "jre-8u45-macosx-x64.dmg" "jdk-8u45-macosx-x64.dmg" "iTerm.app/" "googlechrome.dmg" "gist5043465-d72bb8ad23ed33e6aa509deff27d3dd975a9861e.tar.gz" "gist5043465-d72bb8ad23ed33e6aa509deff27d3dd975a9861e/" "Firefox 38.0.1.dmg" "en.html" "Emacs-24.5-1-universal.dmg" "breadcrumb.el" "Atom.app/" "agile-web-development-with-rails-3-2_p3_0.pdf" ".localized" ".DS_Store" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/app/models/user/" (21854 5787 0 0) "channels.rb" "cache.rb" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/app/views/devise/" (21850 6101 0 0) "unlocks/" "sessions/" "registrations/" "passwords/" "mailer/" "confirmations/" "_links.erb" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/app/views/" (21850 6101 0 0) "subscriptions/" "sponsorships/" "sponsored_posts/" "shared/" "profile/" "posts/" "paypal/" "pages/" "notifier/" "layouts/" "kaminari/" "import/" "folders/" "feeds/" "devise/" "bookmarks/" "api/" "accounts/" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/app/mailers/" (21850 6101 0 0) "notifier.rb" "../" "./")
+
+ ("/Users/gabriel/Pictures/" (21850 1958 0 0) ".localized" "../" "./")
+
+ ("/home/" (21854 32377 437327 0) "../" "./")
+
+ ("/usr/" (21850 2985 0 0) "X11R6/" "X11/" "standalone/" "share/" "sbin/" "local/" "libexec/" "lib/" "include/" "bin/" "../" "./")
+
+ ("/usr/local/etc/" (21851 20509 0 0) "wgetrc" "redis.conf" "redis-sentinel.conf" "openssl/" "mongod.conf" "elasticsearch/" "bash_completion.d/" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/app/models/account/" (21850 6101 0 0) "stripe_gateway.rb" "paypal_gateway.rb" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/spec/fixtures/content/" (21851 41282 0 0) "atom-youtube.html" "atom-xhtml.html" "atom-complex.html" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/spec/fixtures/" (21850 6101 0 0) "youtube-atom.xml" "wrong-self.xml" "windows-1256.xml" "windows-1256-tag.xml" "windows-1251-invalid.xml" "utf-8-invalid.xml" "utf-8-invalid-post.xml" "utf-7-tag.xml" "utf-16-tag.xml" "utf-16-invalid.xml" "uppercase-urls.xml" "subscriptions.json.erb" "stripe_webhook_success.json" "stripe_webhook_subscription_updated.json" "stripe_webhook_subscription_deleted.json" "stripe_webhook_failed.json" "stripe_webhook_card_changed.json" "self-closing-image-tag.xml" "rss-complex.xml" "media.xml" "large.xml" "invalid.html" "import.opml.erb" "image-tag.xml" "image-big-tag.xml" "guid-permalink.xml" "gb2312.xml" "engadget.xml" "empty.xml" "content/" "blog.xml" "blog-updated.xml.erb" "atom-xml-base.xml" "atom-xhtml.xml" "atom-googledocs.xml" "atom-feedburner.xml" "atom-complex.xml" "arstechnica.xml" "alternate-rel.html.erb" "alternate-abs.html.erb" "alt-link-no-type.xml" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/spec/models/" (21850 6101 0 0) "subscriptions_spec.rb" "posts_spec.rb" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/spec/features/" (21850 6101 0 0) "users/" "trending_spec.rb" "subscriptions_spec.rb" "sponsored_posts_spec.rb" "relationships_spec.rb" "items_spec.rb" "folders_spec.rb" "bookmarks_spec.rb" "banner_ads_spec.rb" "accounts/" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/spec/factories/" (21850 6101 0 0) "users.rb" "subscriptions.rb" "sponsored_posts.rb" "posts.rb" "items.rb" "feeds.rb" "accounts.rb" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/spec/" (21850 6101 0 0) "workers/" "tasks/" "support/" "spec_helper.rb" "performance/" "models/" "fixtures/" "features/" "factories/" "api/" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/app/assets/javascripts/plugins/" (21851 24036 0 0) "waitforimages.js" "uri.js" "smooth-scroll.js" "pjax.js" "nano.js" "moment.lang.js" "moment.js" "index.js" "imgpreload.js" "dropdown.js.coffee" "cookie.js" "colors.js" "bootstrap-growl.js.coffee" "ajaxq.js" "../" "./")
+
+ ("/Users/gabriel/Projects/i18n/" (21851 27851 0 0) "requirements.txt" "README.md" "Rakefile" "locales/" "LICENSE" "checker.py" ".travis.yml" ".git/" "../" "./")
+
+ ("/Users/gabriel/.emacs.d/tern/" (21851 16508 0 0) "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/app/assets/javascripts/" (21850 6101 0 0) "spec.js.coffee" "reader/" "plugins/" "application.js.coffee" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/app/assets/" (21850 6101 0 0) "stylesheets/" "javascripts/" "images/" "../" "./")
+
+ ("/Users/gabriel/Projects/theoldreader/app/" (21850 6101 0 0) "workers/" "views/" "uploaders/" "models/" "mailers/" "helpers/" "controllers/" "assets/" "../" "./")
+
+ ("/Users/" (21850 1957 0 0) "Shared/" "gabriel/" ".localized" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

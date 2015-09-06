@@ -1,0 +1,9 @@
+# -*- mode: snippet; require-final-newline: nil -*-
+# name: anki
+# key: anki
+# binding: direct-keybinding
+# --
+* FRONT
+** $1
+* BACK
+** $2
