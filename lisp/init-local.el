@@ -20,19 +20,40 @@
 (require 'breadcrumb)
 (define-prefix-command 'my-prefix)
 (global-set-key (kbd "M-j") 'my-prefix)
-(define-key 'my-prefix (kbd "s") 'bc-set)
-(define-key 'my-prefix (kbd "p") 'bc-previous)
-(define-key 'my-prefix (kbd "n") 'bc-next)
+(define-key 'my-prefix (kbd "s b") 'bc-set)
+(define-key 'my-prefix (kbd "p b") 'bc-previous)
+(define-key 'my-prefix (kbd "n b") 'bc-next)
 (define-key 'my-prefix (kbd "g") 'magit-status)
 (define-key 'my-prefix (kbd "h") 'helm-spotify)
 (define-key 'my-prefix (kbd "r") 'rgrep)
 (define-key 'my-prefix (kbd "M-o c") 'org-capture)
 (define-key 'my-prefix (kbd "M-o h") 'org-mark-element)
 (define-key 'my-prefix (kbd "f n") 'copy-file-name-to-clipboard)
+(global-set-key (kbd "M-j C-s") 'isearch-current-symbol)
+(global-set-key (kbd "M-j C-r") 'isearch-backward-current-symbol)
+(global-set-key (kbd "M-j M-f") 'find-name-dired)
+
+(defun move-window-down ()
+  (interactive)
+  (next-line)
+  (recenter))
+(defun move-window-up ()
+  (interactive)
+  (previous-line)
+  (recenter))
+
+                                        ;(setq local-function-key-map (delq '(kp-tab . [9]) local-function-key-map))
+(global-set-key (kbd "C-p") 'move-window-up)
+;(global-set-key (kbd "<up>") 'move-window-up)
+;(global-set-key (kbd "<down>") 'move-window-down)
+(global-set-key (kbd "C-n") 'move-window-down)
+                                        ;(definez-key 'my-prefix (kbd "p h") 'highlight-symbol-prev)
+                                        ;(define-key 'my-prefix (kbd "n h") 'highlight-symbol-next)
+
 
 (require 'multi)
-(require 'helm-spotify)
 (global-linum-mode 1)
+;(require 'helm-spotify)
 
                                         ;Change auto save behavior
 (setq auto-save-default nil)
@@ -176,8 +197,31 @@
   (let ((start (point)))
     (isearch-backward-regexp nil 1)
     (isearch-yank-symbol partialp)))
-(global-set-key (kbd "M-j C-s") 'isearch-current-symbol)
-(global-set-key (kbd "M-j C-r") 'isearch-backward-current-symbol)
+
+(defvar blog-prefix "/Users/gabriel/Projects/blog/resources/templates/md/")
+(defun create-blog-post (post-name date)
+  "Create a blog post"
+  (interactive "bPost Name: \nbPost date (YYYY-MM-DD): ")
+  (find-file (string-join '(blog-prefix
+                            "preliminary/"
+                            date
+                            "-"
+                            (string-join (split-string post-name) "-")
+                            ".md"))))
+(defun finish-blog-post (post-name)
+  "Move a blog post to the correct directory"
+  (interactive "bPost Name: ")
+  (rename-file ('(blog-prefix
+                  "preliminary/"
+                  date
+                  "-"
+                  (string-join (split-string post-name) "-")
+                  ".md"))
+               (string-join '("/Users/gabriel/Projects/blog/resources/templates/md/posts/"
+                              date
+                              "-"
+                              (string-join (split-string post-name) "-")
+                              ".md"))))
 
 (require 'yasnippet)
 (yas-global-mode 1)
@@ -201,9 +245,6 @@
 ;(setq magit-auto-revert-mode nil)
 ;(setq magit-last-seen-setup-instructions "1.4.0")
 
-(set-face-attribute 'rainbow-delimiters-unmatched-face nil
-                    :foreground 'unspecified
-                    :inherit 'error)
 (set-default 'tramp-default-proxies-alist (quote (("45.55.130.219" "root" "/ssh:gabe@45.55.130.219:"))))
 
 (defun find-file-as-root ()
@@ -244,3 +285,12 @@
            (tramp-make-tramp-file-name "sudo" "root" "localhost"
                                        default-directory))))
   (call-interactively 'find-file))
+(add-hook 'markdown-mode-hook 'turn-on-visual-line-mode)
+(setq scroll-preserve-screen-position 1)
+;(global-set-key (kbd "M-n") (kbd "C-u 1 C-v"))
+;(global-set-key (kbd "M-p") (kbd "C-u 1 M-v"))
+
+(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
+(define-key helm-map (kbd "C-i") 'helm-execute-persistent-action)
+(define-key helm-map (kbd "C-z")  'helm-select-action)
+                                        ;(global-set-key (kbd "C-i") 'move-window-down)
