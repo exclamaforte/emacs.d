@@ -40,6 +40,10 @@
 (require-package 'scratch)
 (require-package 'mwe-log-commands)
 
+(require 'init-breadcrumb)
+(require 'init-helm)
+(require 'init-yas)
+(require 'init-ein)
 (require 'init-frame-hooks)
 (require 'init-xterm)
 (require 'init-themes)
@@ -54,7 +58,7 @@
 (require 'init-flycheck)
 
 (require 'init-recentf)
-;(require 'init-ido)
+                                        ;(require 'init-ido)
 (require 'init-hippie-expand)
 (require 'init-auto-complete)
 (require 'init-windows)

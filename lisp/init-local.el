@@ -1,23 +1,15 @@
 ;;; local --- Summary
 ;;; Commentary:
 ;;;tern
-;(add-to-list 'load-path "/home/gabe/.emacs.d/tern/emacs")
-;(autoload 'tern-mode "tern.el" nil t)
-;(add-hook 'js2-mode-hook (lambda () (tern-mode t)))
-;(setenv "PATH" (concat "/usr/bin:" (getenv "PATH")))
-;
-;(eval-after-load 'tern  '(progn     (require 'tern-auto-complete)     (tern-ac-setup)))
-;(setenv "NODE_PATH" (concat         "/home/gabe/.emacs.d/tern/lib" ":"         "/home/gabe/.emacs.d" ":"         (getenv "NODE_PATH")         )        )
+                                        ;(add-to-list 'load-path "/home/gabe/.emacs.d/tern/emacs")
+                                        ;(autoload 'tern-mode "tern.el" nil t)
+                                        ;(add-hook 'js2-mode-hook (lambda () (tern-mode t)))
+                                        ;(setenv "PATH" (concat "/usr/bin:" (getenv "PATH")))
+                                        ;
+                                        ;(eval-after-load 'tern  '(progn     (require 'tern-auto-complete)     (tern-ac-setup)))
+                                        ;(setenv "NODE_PATH" (concat         "/home/gabe/.emacs.d/tern/lib" ":"         "/home/gabe/.emacs.d" ":"         (getenv "NODE_PATH")         )        )
 ;;; Code:
 
-(add-to-list 'load-path "/Users/gabriel/.emacs.d/helm")
-
-(add-to-list 'load-path "/Users/gabriel/.emacs.d/async")
-(require 'helm-config)
-(global-set-key (kbd "M-x") 'helm-M-x)
-(helm-mode 1)
-
-(require 'breadcrumb)
 (define-prefix-command 'my-prefix)
 (global-set-key (kbd "M-j") 'my-prefix)
 (define-key 'my-prefix (kbd "s b") 'bc-set)
@@ -64,14 +56,6 @@
 (setq auto-save-file-name-transforms
       `((".*" ,temporary-file-directory t)))
 
-;; [Facultative] Only if you have installed async.
-(add-to-list 'load-path "/Users/gabriel/.emacs.d/helm")
-
-(add-to-list 'load-path "/Users/gabriel/.emacs.d/async")
-(require 'helm-config)
-(global-set-key (kbd "M-x") 'helm-M-x)
-(helm-mode 1)
-(helm-autoresize-mode 0)
 
 ;;;if package is not working
 ;;; M-x package-refresh-contents
@@ -93,7 +77,7 @@
 (global-set-key (kbd "M-[") 'paredit-wrap-square)
 
 (setq blink-cursor-mode nil)
-(provide 'init-local)
+
 
 
 ;; (add-hook 'haskell-mode-hook 'interactive-haskell-mode)
@@ -113,9 +97,6 @@
 ;; (define-key haskell-mode-map (kbd "C-c c") 'haskell-process-cabal)
 ;; (define-key haskell-mode-map (kbd "SPC") 'haskell-mode-contextual-space)
 ;; (setq haskell-program-name "/some/where/ghci.exe")
-
-(projectile-global-mode)
-(add-hook 'projectile-mode-hook 'projectile-rails-on)
 
 
 (defun isearch-yank-regexp (regexp)
@@ -223,15 +204,8 @@
                               (string-join (split-string post-name) "-")
                               ".md"))))
 
-(require 'yasnippet)
-(yas-global-mode 1)
-(setq yas-snippet-dirs
-      '("~/.emacs.d/snippets"))
-
 (global-linum-mode 1)
 
-(require 'ein)
-(setq ein:use-auto-complete t)
 (defun my-find-file-check-make-large-file-read-only-hook ()
   "If a file is over a given size, make the buffer read only."
   (when (> (buffer-size) (* 1024 1024))
@@ -253,44 +227,16 @@
   (run-scheme
    "/usr/local/scmutils/mit-scheme/bin/scheme --library /usr/local/scmutils/mit-scheme/lib"))
 
-(add-hook 'haskell-mode-hook 'interactive-haskell-mode)
-(add-hook 'haskell-mode-hook 'haskell-indentation-mode)
-(custom-set-variables
- '(haskell-process-type 'cabal-repl))
-(custom-set-variables
- '(haskell-process-suggest-remove-import-lines t)
- '(haskell-process-auto-import-loaded-modules t)
- '(haskell-process-log t))
-(define-key haskell-mode-map (kbd "C-c C-l") 'haskell-process-load-or-reload)
-(define-key haskell-mode-map (kbd "C-`") 'haskell-interactive-bring)
-(define-key haskell-mode-map (kbd "C-c C-t") 'haskell-process-do-type)
-(define-key haskell-mode-map (kbd "C-c C-i") 'haskell-process-do-info)
-(define-key haskell-mode-map (kbd "C-c C-c") 'haskell-process-cabal-build)
-(define-key haskell-mode-map (kbd "C-c C-k") 'haskell-interactive-mode-clear)
-(define-key haskell-mode-map (kbd "C-c c") 'haskell-process-cabal)
-(define-key haskell-mode-map (kbd "SPC") 'haskell-mode-contextual-space)
-;;; init-local.el ends here
+
 (set-face-attribute 'default nil :height 117)
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
 (eval-after-load 'flycheck
   '(setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
-(let* ((parsed (when (tramp-tramp-file-p default-directory)
-                 (coerce (tramp-dissect-file-name default-directory)
-                         'list)))
-       (default-directory
-         (if parsed
-             (apply 'tramp-make-tramp-file-name
-                    (append '("sudo" "root") (cddr parsed)))
-           (tramp-make-tramp-file-name "sudo" "root" "localhost"
-                                       default-directory))))
-  (call-interactively 'find-file))
 (add-hook 'markdown-mode-hook 'turn-on-visual-line-mode)
 (setq scroll-preserve-screen-position 1)
-;(global-set-key (kbd "M-n") (kbd "C-u 1 C-v"))
-;(global-set-key (kbd "M-p") (kbd "C-u 1 M-v"))
-
-(define-key helm-map (kbd "<tab>") 'helm-execute-persistent-action)
-(define-key helm-map (kbd "C-i") 'helm-execute-persistent-action)
-(define-key helm-map (kbd "C-z")  'helm-select-action)
+                                        ;(global-set-key (kbd "M-n") (kbd "C-u 1 C-v"))
+                                        ;(global-set-key (kbd "M-p") (kbd "C-u 1 M-v"))
                                         ;(global-set-key (kbd "C-i") 'move-window-down)
+;;; init-local.el ends here
+(provide 'init-local)
