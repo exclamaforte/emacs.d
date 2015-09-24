@@ -230,13 +230,20 @@
 
 (set-face-attribute 'default nil :height 117)
 
-(add-hook 'after-init-hook #'global-flycheck-mode)
-(eval-after-load 'flycheck
-  '(setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
+                                        ;(add-hook 'after-init-hook #'global-flycheck-mode)
+
+;(eval-after-load 'flycheck  '(setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
 (add-hook 'markdown-mode-hook 'turn-on-visual-line-mode)
 (setq scroll-preserve-screen-position 1)
                                         ;(global-set-key (kbd "M-n") (kbd "C-u 1 C-v"))
                                         ;(global-set-key (kbd "M-p") (kbd "C-u 1 M-v"))
                                         ;(global-set-key (kbd "C-i") 'move-window-down)
-;;; init-local.el ends here
+
+(add-hook 'text-mode-hook (lambda () (turn-on-visual-line-mode)))
+(global-set-key (kbd "C-1") 'sanityinc/toggle-delete-other-windows)
+(global-set-key (kbd "C-2") 'split-window-below)
+(global-set-key (kbd "C-3") 'split-window-right)
+(global-set-key (kbd "C-0") 'delete-window)
+
 (provide 'init-local)
+;;; init-local.el ends here
