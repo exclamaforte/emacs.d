@@ -34,18 +34,29 @@
   (previous-line)
   (recenter))
 
-                                        ;(setq local-function-key-map (delq '(kp-tab . [9]) local-function-key-map))
+(defvar window-movement 1 "1 means movement is on")
 (global-set-key (kbd "C-p") 'move-window-up)
-;(global-set-key (kbd "<up>") 'move-window-up)
-;(global-set-key (kbd "<down>") 'move-window-down)
 (global-set-key (kbd "C-n") 'move-window-down)
+(defun toggle-window-movement ()
+  (interactive)
+  (if window-movement
+      (progn (global-set-key (kbd "C-p") 'previous-line)
+             (global-set-key (kbd "C-n") 'next-line)
+             (setq window-movement nil))
+    (progn (global-set-key (kbd "C-p") 'move-window-up)
+           (global-set-key (kbd "C-n") 'move-window-down)
+           (setq window-movement 1))))
+
+                                        ;(global-set-key (kbd "<up>") 'move-window-up)
+                                        ;(global-set-key (kbd "<down>") 'move-window-down)
+
                                         ;(definez-key 'my-prefix (kbd "p h") 'highlight-symbol-prev)
                                         ;(define-key 'my-prefix (kbd "n h") 'highlight-symbol-next)
 
 
 (require 'multi)
 (global-linum-mode 1)
-;(require 'helm-spotify)
+                                        ;(require 'helm-spotify)
 
                                         ;Change auto save behavior
 (setq auto-save-default nil)
@@ -216,8 +227,8 @@
 
 (add-hook 'find-file-hook 'my-find-file-check-make-large-file-read-only-hook)
 
-;(setq magit-auto-revert-mode nil)
-;(setq magit-last-seen-setup-instructions "1.4.0")
+                                        ;(setq magit-auto-revert-mode nil)
+                                        ;(setq magit-last-seen-setup-instructions "1.4.0")
 
 (set-default 'tramp-default-proxies-alist (quote (("45.55.130.219" "root" "/ssh:gabe@45.55.130.219:"))))
 
@@ -232,7 +243,7 @@
 
                                         ;(add-hook 'after-init-hook #'global-flycheck-mode)
 
-;(eval-after-load 'flycheck  '(setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
+                                        ;(eval-after-load 'flycheck  '(setq flycheck-display-errors-function #'flycheck-pos-tip-error-messages))
 (add-hook 'markdown-mode-hook 'turn-on-visual-line-mode)
 (setq scroll-preserve-screen-position 1)
                                         ;(global-set-key (kbd "M-n") (kbd "C-u 1 C-v"))
